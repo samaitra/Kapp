@@ -5,3 +5,8 @@ interface Platform {
 }
 
 expect fun getPlatform(): Platform
+
+fun hello(): String = "Hello from Platform"
+class Proxy {
+    fun proxyHello() = hello()
+}
